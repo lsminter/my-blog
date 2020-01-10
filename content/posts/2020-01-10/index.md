@@ -3,7 +3,7 @@ slug: 2020-01-10-post
 date: 2020-01-10
 title: 'Learning about Ruby, 1st post'
 description: 'I'm going through a course for Ruby on Rails. This will be what I've learned for the first 26 lessons.'
-published: false
+published: true
 banner: './banner.png'
 ---
 
