@@ -1,5 +1,5 @@
 ---
-slug: invisible-post
+slug: 2020-01-10-post
 date: 2019-01-01
 title: 'this post is a ghost'
 description: 'this post has all of the right fields'
