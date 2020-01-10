@@ -21,8 +21,8 @@ module.exports = {
   backgroundColor: '#2b2e3c',
 
   // Social component
-  twitterUrl: '',
-  twitterHandle: '',
+  twitterUrl: 'https://twitter.com/LucasMinter2',
+  twitterHandle: '@LucasMinter2',
   githubUrl: 'https://github.com/lsminter/',
   githubHandle: 'lsminter',
   fbAppID: '',
