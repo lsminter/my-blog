@@ -1,7 +1,7 @@
 ---
-slug: invisible-post
-date: 2019-01-01
-title: 'this post is a ghost'
+slug: ruby-part-i
+date: 2020-01-10
+title: 'Learning Ruby Part I'
 description: 'this post has all of the right fields'
 categories: ['test']
 keywords: ['test']
