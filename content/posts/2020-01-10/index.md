@@ -1,8 +1,8 @@
 ---
 slug: ruby-part-i
 date: 2020-01-10
-title: 'Learning Ruby Part I'
-description: 'this post has all of the right fields'
+title: 'Learner Ruby: Conditionals, User Input, and Arithmetic'
+description: 'This is my first post on my learning Ruby'
 categories: ['test']
 keywords: ['test']
 author: 'Lucas Minter'
@@ -11,7 +11,7 @@ redirects:
   - '/invisible-post-423123'
 ---
 
-Made it all the way up to lesson 27 today! Learned about if/elsif/else statements, the Bang(!) operator, how to use remainders, and a few other things that I can't think of right now. Did all this to and from the train ride to Seattle today.
+Made it all the way up to lesson 27 today in [thefirehoseproject](http://thefirehoseproject.com/)! Learned about if/elsif/else statements, the Bang(!) operator, how to use remainders, and a few other things that I can't think of right now. Did all this to and from the train ride to Seattle today.
 
 I've been able to complete every exercise so far pretty easily for the most part as well as figure out some stuff on my own such as using gets in a function to get user input for a function. gets and puts were pretty weird. The if/else statements were pretty easy as they were the same as in JS. Creating variables is easier, I like how ruby does their variables. You don't need any keywords to declare them. def and end were easy to understand as well for creating functions. One thing I've liked about ruby so far is the gets command. It makes it very easy to get user input in the terminal. (Not sure of how to do it in JS). I just though it was cool.
 
@@ -98,4 +98,4 @@ puts "6 is_odd? #{is_odd?(6)}"
 ```
 
 
-I've been enjoying learning ruby so far and it has been a nice refresher to learn something different than Javascript. I think my past couple years doing data entry at [egghead](egghead.io) and doing free JavaScript online courses through [freecodecamp](freecodecamp.org) and [codeacademy](codeacademy.com) made learning Ruby fairly easy so far. It's been really cool to see the similarities and differences between the two languages so far. 
+I've been enjoying learning ruby so far and it has been a nice refresher to learn something different than Javascript. I think my past couple years doing data entry/content wrangling at [egghead](egghead.io) and doing free JavaScript online courses through [freecodecamp](freecodecamp.org) and [codeacademy](codeacademy.com) made learning Ruby fairly easy so far. It's been really cool to see the similarities and differences between the two languages so far. 
