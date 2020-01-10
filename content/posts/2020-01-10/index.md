@@ -5,6 +5,7 @@ title: 'Learning Ruby Part I'
 description: 'this post has all of the right fields'
 categories: ['test']
 keywords: ['test']
+author: 'Lucas Minter'
 published: true
 redirects:
   - '/invisible-post-423123'

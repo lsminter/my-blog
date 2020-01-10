@@ -6,6 +6,7 @@ description: 'this post has all of the right fields'
 categories: ['test']
 keywords: ['test']
 banner: './images/banner.jpg'
+author: 'Lucas Minter'
 published: false
 redirects:
   - '/invisible-post-423123'
