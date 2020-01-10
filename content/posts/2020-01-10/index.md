@@ -4,7 +4,6 @@ date: 2020-01-10
 title: 'Learning about Ruby, 1st post'
 description: 'I'm going through a course for Ruby on Rails. This will be what I've learned for the first 26 lessons.'
 published: true
-banner: ''
 ---
 
 Made it all the way up to lesson 27 today! Learned about if/elsif/else statements, the Bang(!) operator, how to use remainders, and a few other things that I can't think of right now. Did all this to and from the train ride to Seattle today.
