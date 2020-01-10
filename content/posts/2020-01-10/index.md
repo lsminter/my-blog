@@ -6,7 +6,7 @@ description: 'this post has all of the right fields'
 categories: ['test']
 keywords: ['test']
 banner: './images/banner.jpg'
-published: false
+published: true
 redirects:
   - '/invisible-post-423123'
 ---
