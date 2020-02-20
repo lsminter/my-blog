@@ -1,0 +1,10 @@
+.me{
+  height: 350px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
