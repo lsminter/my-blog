@@ -6,7 +6,7 @@ description: 'Learning the difference between margin and padding in CSS'
 categories: ['test']
 keywords: ['test']
 author: 'Lucas Minter'
-published: true
+published: false
 redirects:
   - '/invisible-post-423123'
 ---
