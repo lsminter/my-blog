@@ -34,6 +34,9 @@ module.exports = {
       options: {contentBlog: 'content/posts'},
     },
     {
+      resolve: `gatsby-plugin-twitter`
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
