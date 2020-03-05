@@ -6,7 +6,7 @@ description: 'Learning the difference between margin and padding in CSS'
 categories: ['test']
 keywords: ['test']
 author: 'Lucas Minter'
-published: false
+published: true
 redirects:
   - '/invisible-post-423123'
 ---
@@ -17,5 +17,5 @@ I've come across a few really good examples as well as some pretty funny ones an
 
 [pluralsight](https://www.pluralsight.com/blog/creative-professional/whats-difference-margin-padding) has a really good example using a box model which seems to be the easiest way to explain the difference.
 
-![](plurasight-margin-and-padding.png)
+![](./images/plurasight-margin-and-padding.png)
 
