@@ -8,7 +8,7 @@ import './styles.css';
 export default function Bio () {
   return ( 
     <div>
-      <img src={me} class="me" />
+      <img src={me} alt="" class="me" />
       <h3>Work Experiences</h3>
       <p>
         I'm a 25 year old learner advocate that currently works at <a href="https://egghead.io">egghead.io</a>. I've been working for egghead for about 3 years doing various data entry jobs. I was contracted for that for about 2 years before being hired on as a full time employee. 
@@ -34,8 +34,8 @@ export default function Bio () {
       </p>
       <h4>Animals</h4>
       <div class="flex">
-        <img src={cuddlingDaffy} class="small"/>   
-        <img src={drivingDaffy} class="small" />
+        <img src={cuddlingDaffy} alt="" class="small"/>   
+        <img src={drivingDaffy} alt="" class="small" />
       </div>
       <p>
         I'm sure you could guess that from my past in veterinary, I absolutely love animals. I have a little, 9 year old, Jack Russel Terrier although she still acts like a puppy every day. She doesn't really know any tricks or anything, but really loves to go to the park and chase dogs around. She is one of those small dogs with Big Dog Syndrome. She is an extreme cuddler and hates to leave my side. 
