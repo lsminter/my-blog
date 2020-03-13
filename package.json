@@ -7,7 +7,7 @@
   },
   "main": "gatsby-config.js",
   "dependencies": {
-    "@eggheadio/gatsby-theme-egghead-blog": "*",
+    "@eggheadio/gatsby-theme-egghead-blog": "^2.0.2",
     "gatsby": "latest",
     "gatsby-plugin-manifest": "^2.2.5",
     "gatsby-plugin-twitter": "^2.1.19"
