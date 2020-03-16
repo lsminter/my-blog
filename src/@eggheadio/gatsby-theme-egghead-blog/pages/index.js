@@ -52,7 +52,7 @@ const Description = styled.p`
   margin-bottom: 10px;
   display: inline-block;
 `
-export default function Index({ data: { site, allMdx } }) {
+export default function Index({ data: { site, thoughts, irl, code } }) {
   const theme = useTheme()
   return (
     <Layout site={site}>
@@ -60,18 +60,28 @@ export default function Index({ data: { site, allMdx } }) {
       <Container
         css={css`
           padding-bottom: 0;
+          display: flex;
+          flex-direction: left;
+          justify-content: between;
+          max-width: 1000px;
+          div{
+            margin-right: 20px;
+          }
         `}
       >
-        {allMdx.edges.map(({ node: post }) => (
+        <div>
+          <h2>Latest Code Article</h2>
+        {code.edges.map(({ node: post }) => (
           <div
             key={post.id}
             css={css`
               margin-bottom: 40px;
             `}
           >
-            <h2
+            <h3
               css={css({
                 marginBottom: rhythm(0.3),
+                textAlign: "left",
                 transition: 'all 150ms ease',
                 ':hover': {
                   color: theme.colors.primary,
@@ -84,7 +94,7 @@ export default function Index({ data: { site, allMdx } }) {
               >
                 {post.frontmatter.title}
               </Link>
-            </h2>
+            </h3>
             <Description>
               {post.excerpt}{' '}
               <Link
@@ -96,9 +106,83 @@ export default function Index({ data: { site, allMdx } }) {
             </Description>
           </div>
         ))}
-        <Link to="/blog" aria-label="Visit blog page">
-          View all articles
-        </Link>
+        </div>
+        <div>
+          <h2>Latest Thoughts</h2>
+        {thoughts.edges.map(({ node: post }) => (
+          <div
+            key={post.id}
+            css={css`
+              margin-bottom: 40px;
+            `}
+          >
+            <h3
+              css={css({
+                marginBottom: rhythm(0.3),
+                textAlign: "left",
+                transition: 'all 150ms ease',
+                ':hover': {
+                  color: theme.colors.primary,
+                },
+              })}
+            >
+              <Link
+                to={post.frontmatter.slug}
+                aria-label={`View ${post.frontmatter.title}`}
+              >
+                {post.frontmatter.title}
+              </Link>
+            </h3>
+            <Description>
+              {post.excerpt}{' '}
+              <Link
+                to={post.frontmatter.slug}
+                aria-label={`View ${post.frontmatter.title}`}
+              >
+                Read Article →
+              </Link>
+            </Description>
+          </div>
+        ))}
+        </div>
+        <div>
+        <h2>Latest IRL Post</h2>
+        {irl.edges.map(({ node: post }) => (
+          <div
+            key={post.id}
+            css={css`
+              margin-bottom: 40px;
+            `}
+          >
+            <h3
+              css={css({
+                marginBottom: rhythm(0.3),
+                textAlign: "left",
+                transition: 'all 150ms ease',
+                ':hover': {
+                  color: theme.colors.primary,
+                },
+              })}
+            >
+              <Link
+                to={post.frontmatter.slug}
+                aria-label={`View ${post.frontmatter.title}`}
+              >
+                {post.frontmatter.title}
+              </Link>
+            </h3>
+            <Description>
+              {post.excerpt}{' '}
+              <Link
+                to={post.frontmatter.slug}
+                aria-label={`View ${post.frontmatter.title}`}
+              >
+                Read Article →
+              </Link>
+            </Description>
+          </div>
+        ))}
+        </div>
         <hr />
       </Container>
     </Layout>
@@ -112,41 +196,101 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(
-      limit: 5
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { published: { ne: false } } }
-    ) {
+    irl: allMdx(limit: 1, sort: { fields: [frontmatter___date], order: DESC }, filter: {fields: {categories: {in: "irl"}, published: {eq: true}}}) {
       edges {
-        node {
-          excerpt(pruneLength: 190)
-          id
-          fields {
-            title
-            slug
-            date
-          }
-          parent {
-            ... on File {
-              sourceInstanceName
+          node {
+            excerpt(pruneLength: 190)
+            id
+            fields {
+              title
+              slug
+              date
             }
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            description
-            banner {
-              childImageSharp {
-                sizes(maxWidth: 720) {
-                  ...GatsbyImageSharpSizes
-                }
+            parent {
+              ... on File {
+                sourceInstanceName
               }
             }
-            slug
-            keywords
+            frontmatter {
+              title
+              date(formatString: "MMMM DD, YYYY")
+              description
+              banner {
+                childImageSharp {
+                  sizes(maxWidth: 720) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
+              }
+              slug
+              keywords
+            }
           }
         }
-      }
+    }
+    code: allMdx(limit: 1, sort: { fields: [frontmatter___date], order: DESC }, filter: {fields: {categories: {in: "code"}, published: {eq: true}}}) {
+      edges {
+          node {
+            excerpt(pruneLength: 190)
+            id
+            fields {
+              title
+              slug
+              date
+            }
+            parent {
+              ... on File {
+                sourceInstanceName
+              }
+            }
+            frontmatter {
+              title
+              date(formatString: "MMMM DD, YYYY")
+              description
+              banner {
+                childImageSharp {
+                  sizes(maxWidth: 720) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
+              }
+              slug
+              keywords
+            }
+          }
+        }
+    }
+    thoughts: allMdx(limit: 1, sort: { fields: [frontmatter___date], order: DESC }, filter: {fields: {categories: {in: "thoughts"}, published: {eq: true}}}) {
+      edges {
+          node {
+            excerpt(pruneLength: 190)
+            id
+            fields {
+              title
+              slug
+              date
+            }
+            parent {
+              ... on File {
+                sourceInstanceName
+              }
+            }
+            frontmatter {
+              title
+              date(formatString: "MMMM DD, YYYY")
+              description
+              banner {
+                childImageSharp {
+                  sizes(maxWidth: 720) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
+              }
+              slug
+              keywords
+            }
+          }
+        }
     }
   }
 `

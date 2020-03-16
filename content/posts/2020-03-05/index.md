@@ -3,7 +3,7 @@ slug: margin-vs-padding-css
 date: 2020-03-05
 title: 'Margin vs Padding CSS'
 description: 'Learning the difference between margin and padding in CSS'
-categories: ['test']
+categories: ['code']
 keywords: ['test']
 author: 'Lucas Minter'
 published: true

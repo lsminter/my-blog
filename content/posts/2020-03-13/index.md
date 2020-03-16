@@ -3,7 +3,7 @@ slug: living-with-gastroparesis
 date: 2020-03-13
 title: 'Living with Gastroparesis'
 description: 'Learn what it is like to live with someone that suffers from Gastroparesis'
-categories: ['test']
+categories: ['irl']
 keywords: ['test']
 author: 'Lucas Minter'
 published: true

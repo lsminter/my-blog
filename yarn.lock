@@ -818,10 +818,10 @@
     deepmerge "^3.2.0"
     hoist-non-react-statics "^3.3.0"
 
-"@eggheadio/gatsby-theme-egghead-blog@*":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@eggheadio/gatsby-theme-egghead-blog/-/gatsby-theme-egghead-blog-2.0.1.tgz#78c9ac699d7ae21c35302b33f632c1e32ed03eca"
-  integrity sha512-tuLrEhBuEULSbR93dzYXnciWgobSN/rlSXy5vClkBSovfYB0mzg1GKbLDBwGRoIc4XSNSb7fVp2rMWKsQWYUHA==
+"@eggheadio/gatsby-theme-egghead-blog@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@eggheadio/gatsby-theme-egghead-blog/-/gatsby-theme-egghead-blog-2.0.2.tgz#fcd9f1577b936eff2eb43cdc329611da2228f4e5"
+  integrity sha512-L6fKFdKq9OpFhwi8MRGGJsbS1jTUU9ukNGZMIk4d/7cE37OC1pMQm2Ln+p61xlaZ9XxLITLllu9mETx7xjQcQQ==
   dependencies:
     "@callstack/react-theme-provider" "^3.0.3"
     "@emotion/core" "^10.0.14"

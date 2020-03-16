@@ -3,7 +3,7 @@ slug: ruby-part-i
 date: 2020-01-10
 title: 'Learning Ruby: Conditionals, User Input, and Arithmetic'
 description: 'This is my first post on my learning Ruby'
-categories: ['test']
+categories: ['code']
 keywords: ['test']
 author: 'Lucas Minter'
 published: true

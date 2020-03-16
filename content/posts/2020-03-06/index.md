@@ -3,7 +3,7 @@ slug: cannot-execute-binary-file
 date: 2020-03-06
 title: 'Heroku cannot execute binary file'
 description: 'Learning the difference between margin and padding in CSS'
-categories: ['test']
+categories: ['thoughts']
 keywords: ['test']
 author: 'Lucas Minter'
 published: true
