@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: 'https://your-site.io', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
-  siteDescription: 'I am a Learner Advocate at egghead.io!',
+  siteDescription: 'I am a Production Engineer at egghead.io!',
   author: 'Lucas Minter', // Author for schemaORGJSONLD
   organization: '',
 
